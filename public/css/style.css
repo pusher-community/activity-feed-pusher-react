@@ -1,0 +1,59 @@
+h1 {
+  font-size: 2.0em;    
+}
+
+.evts {
+	list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5em 2em;
+}
+
+.evts .evt {
+    margin-bottom: 1.1em;
+    padding-top: 1.5em;
+    font-weight: 500;
+}
+
+.evt-transition-enter {
+	opacity: 0.01;
+}
+
+.evt-transition-enter.evt-transition-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.evt-transition-leave {
+    opacity: 1;
+}
+
+.evt-transition-leave.evt-transition-leave-active {
+    opacity: 0.01;
+    transition: opacity 500ms ease-in;
+}
+
+.evts .evt + .evt {
+    border-top: 1px solid #fff;
+}
+
+.evts .evt-op {
+    color: #172935;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.evts .evt-id {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.evts .evt-date {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.evts .evt-measure {
+    margin-top: 0.5em;
+    color: rgba(255, 255, 255, 0.7);
+}
